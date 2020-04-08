@@ -12,17 +12,10 @@ class App extends React.Component {
     return (
       <Router>
         <div>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
+              <Link to="/">Home </Link>
+              
               <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/dashboard">Dashboard</Link>
-            </li>
-          </ul>
+              {/* <Link to="/dashboard">Dashboard</Link> */}
   
           <hr />
           <Switch>
@@ -32,9 +25,9 @@ class App extends React.Component {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/dashboard">
+            {/* <Route path="/dashboard">
               <Dashboard />
-            </Route>
+            </Route> */}
           </Switch>
         </div>
       </Router>
@@ -56,16 +49,17 @@ function About() {
   return (
     <div>
       <h2>About</h2>
+      <h3>Put about here</h3>
     </div>
   );
 }
 
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
+// function Dashboard() {
+//   return (
+//     <div>
+//       <h2>Dashboard</h2>
+//     </div>
+//   );
+// }
 
 export default App;
