@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import About from './components/About'
 
 class App extends React.Component {
   render() {
@@ -44,22 +45,5 @@ function Home() {
     </div>
   );
 }
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-      <h3>Put about here</h3>
-    </div>
-  );
-}
-
-// function Dashboard() {
-//   return (
-//     <div>
-//       <h2>Dashboard</h2>
-//     </div>
-//   );
-// }
 
 export default App;
