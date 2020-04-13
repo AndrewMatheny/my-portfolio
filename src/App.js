@@ -7,6 +7,11 @@ import {
 } from "react-router-dom";
 import './App.css';
 import About from './components/About'
+import Navbar from './components/Navbar'
+import TripPlanner from './components/TripPlanner'
+import JobSearchTracker from './components/JobSearchTracker'
+import DailyDollar from './components/DailyDollar'
+
 
 class App extends React.Component {
   render() {
