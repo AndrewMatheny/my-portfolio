@@ -21,7 +21,7 @@ class App extends React.Component {
               <Link to="/">Home </Link>
               
               <Link to="/about">About</Link>
-              {/* <Link to="/dashboard">Dashboard</Link> */}
+              <Link to="/dailydollar">DailyDollar</Link>
   
           <hr />
           <Switch>
@@ -31,9 +31,9 @@ class App extends React.Component {
             <Route path="/about">
               <About />
             </Route>
-            {/* <Route path="/dashboard">
-              <Dashboard />
-            </Route> */}
+            <Route path="/dailydollar">
+              <DailyDollar />
+            </Route>
           </Switch>
         </div>
       </Router>
