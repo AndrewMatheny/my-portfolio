@@ -22,6 +22,9 @@ class App extends React.Component {
               
               <Link to="/about">About</Link>
               <Link to="/dailydollar">DailyDollar</Link>
+              <Link to="/tripplanner">Trip Planner</Link>
+              <Link to="/jobsearchtracker">Job Search Tracker</Link>
+              
   
           <hr />
           <Switch>
@@ -33,6 +36,12 @@ class App extends React.Component {
             </Route>
             <Route path="/dailydollar">
               <DailyDollar />
+            </Route>
+            <Route path="/tripplanner">
+              <TripPlanner />
+            </Route>
+            <Route path="/jobsearchtracker">
+              <JobSearchTracker />
             </Route>
           </Switch>
         </div>
