@@ -5,7 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import './App.css';
+// import './App.css';
 import About from './components/About'
 import Navbar from './components/Navbar'
 import TripPlanner from './components/TripPlanner'
