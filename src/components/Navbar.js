@@ -35,10 +35,6 @@ export default class Navbar extends Component {
             />
           </Menu.Menu>
         </Menu>
-
-        <Segment>
-          <img src='https://react.semantic-ui.com/images/wireframe/media-paragraph.png' />
-        </Segment>
       </div>
     )
   }
