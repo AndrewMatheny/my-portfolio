@@ -1,39 +1,47 @@
 import React, { Component } from 'react'
-import { Menu, Segment } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react'
+import { NavLink, Redirect } from 'react-router-dom'
+
 
 export default class Navbar extends Component {
-  state = { activeItem: 'home' }
+  state = {
+     activeItem: 'home',
+     redirect: null
+    }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  handleItemClick = (e, { name }) => {
+    
+    this.setState({ activeItem: name, redirect: name })
+
+
+  }
 
   render() {
     const { activeItem } = this.state
+    if (this.state.redirect) {
+      return <Redirect to={this.state.redirect} />
+    }
 
     return (
       <div>
         <Menu pointing secondary>
           <Menu.Item
+            // as={NavLink}
+            // to='/'
             name='home'
             active={activeItem === 'home'}
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name='messages'
-            active={activeItem === 'messages'}
+            name='about'
+            active={activeItem === 'about'}
             onClick={this.handleItemClick}
           />
           <Menu.Item
-            name='friends'
-            active={activeItem === 'friends'}
+            name='daily dollar'
+            active={activeItem === 'dailydollar'}
             onClick={this.handleItemClick}
           />
-          <Menu.Menu position='right'>
-            <Menu.Item
-              name='logout'
-              active={activeItem === 'logout'}
-              onClick={this.handleItemClick}
-            />
-          </Menu.Menu>
         </Menu>
       </div>
     )
