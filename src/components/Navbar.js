@@ -49,6 +49,20 @@ export default class Navbar extends Component {
             active={activeItem === 'dailydollar'}
             onClick={this.handleItemClick}
           />
+          <Menu.Item
+            as={NavLink}
+            to='/tripplanner'
+            name='trip planner'
+            active={activeItem === 'tripplanner'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            as={NavLink}
+            to='/jobsearchtracker'
+            name='job search tracker'
+            active={activeItem === 'jobsearchtracker'}
+            onClick={this.handleItemClick}
+          />
         </Menu>
       </div>
     )
