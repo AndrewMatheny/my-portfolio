@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
-import { NavLink, Redirect } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 
 export default class Navbar extends Component {
   state = {
-     activeItem: 'home',
-     redirect: null
+     activeItem: 'home'
     }
 
   handleItemClick = (e, { name }) => {
     
     this.setState({
-       activeItem: name,
-      //  redirect: name 
+       activeItem: name
     })
 
 
@@ -21,9 +19,6 @@ export default class Navbar extends Component {
 
   render() {
     const { activeItem } = this.state
-    // if (this.state.redirect) {
-    //   return <Redirect to={this.state.redirect} />
-    // }
 
     return (
       <div>
