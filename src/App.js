@@ -28,7 +28,6 @@ class App extends React.Component {
               <Link to="/jobsearchtracker">Job Search Tracker</Link>
               
   
-          <hr />
           <Switch>
             <Route exact path="/">
               <Home />
