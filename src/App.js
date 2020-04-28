@@ -20,12 +20,12 @@ class App extends React.Component {
       <Router>
         <Navbar />
         <div>
-              <Link to="/">Home </Link>
+              {/* <Link to="/">Home </Link>
               
               <Link to="/about">About</Link>
               <Link to="/dailydollar">DailyDollar</Link>
               <Link to="/tripplanner">Trip Planner</Link>
-              <Link to="/jobsearchtracker">Job Search Tracker</Link>
+              <Link to="/jobsearchtracker">Job Search Tracker</Link> */}
               
   
           <Switch>
