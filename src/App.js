@@ -2,8 +2,7 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 // import './App.css';
 import About from './components/About'
@@ -20,14 +19,6 @@ class App extends React.Component {
       <Router>
         <Navbar />
         <div>
-              {/* <Link to="/">Home </Link>
-              
-              <Link to="/about">About</Link>
-              <Link to="/dailydollar">DailyDollar</Link>
-              <Link to="/tripplanner">Trip Planner</Link>
-              <Link to="/jobsearchtracker">Job Search Tracker</Link> */}
-              
-  
           <Switch>
             <Route exact path="/">
               <Home />
