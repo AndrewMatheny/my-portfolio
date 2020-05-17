@@ -1,9 +1,14 @@
 import React from 'react'
+import InformationCard from '../containers/InformationCard'
 
 export default class DailyDollar extends React.Component {
     render() {
         return (
-            <div>DailyDollar Page</div>
+            <div>
+                <div>DailyDollar Page</div>
+                <InformationCard />
+            </div>
+            
         )
     }
 }
